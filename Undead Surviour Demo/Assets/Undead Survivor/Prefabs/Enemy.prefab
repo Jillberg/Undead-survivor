@@ -206,9 +206,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  animator: {fileID: 0}
+  animator: {fileID: 204667976708140783}
   sprite: {fileID: 0}
   damage: 10
+  Ehealth: 10
 --- !u!61 &-1559294838287122272
 BoxCollider2D:
   m_ObjectHideFlags: 0

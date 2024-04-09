@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Undead Survivor/Scene/GameScene.unity
+    guid: 38e5db794b8649e42b8feb732f733f6c
+  - enabled: 1
+    path: Assets/Undead Survivor/Scene/StartMenu.unity
+    guid: 94af5d1e8a625ac479d8a67d556e909e
   m_configObjects: {}
