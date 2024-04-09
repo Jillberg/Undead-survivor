@@ -1,0 +1,4 @@
+repository "Undead Surviour Demo@firstaim@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
