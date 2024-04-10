@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
 
     float timerB = 0f;
     float spawnTime = 1f;
-    float spawnTimeB = 5f;
+    //float spawnTimeB = 5f;
     // Start is called before the first frame update
     void Awake()
     {
