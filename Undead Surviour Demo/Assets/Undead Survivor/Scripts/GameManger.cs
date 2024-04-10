@@ -44,7 +44,9 @@ public class GameManger : MonoBehaviour
     }
     public void Gameover()
     {
+
         this.isLive = false;
+        
         Time.timeScale = 0;
         HUD.instance.GameResult(false);
         
