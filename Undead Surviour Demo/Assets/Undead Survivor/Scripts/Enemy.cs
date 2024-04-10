@@ -38,8 +38,10 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //enemy will be hurt when collision is Bullet or RotateBullet
         if (!(collision.CompareTag("Bullet") || collision.CompareTag("RotateBullet"))) return;
 
+        //the damage number depends on which collision is, the damage of Bullet is different to RotateBullet's.
         if (collision.CompareTag("Bullet"))
             Ehealth -= collision.GetComponent<Bullet>().damage;
         else
