@@ -21,7 +21,6 @@ public class GameManger : MonoBehaviour
 
 
     public float playerdamage = 1;
-    // Start is called before the first frame update
     void Awake()
     {
         instance = this;
@@ -46,6 +45,7 @@ public class GameManger : MonoBehaviour
     public void Gameover()
     {
         this.isLive = false;
+        Time.timeScale = 0;
         HUD.instance.GameResult(false);
         
     }

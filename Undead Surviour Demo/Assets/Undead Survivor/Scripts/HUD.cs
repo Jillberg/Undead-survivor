@@ -42,11 +42,11 @@ public class HUD : MonoBehaviour
         resultPanel.SetActive(true);
         if(isWin)
         {
-            resultText.text = "Win";
+            resultText.text = "Congrats!";
         }
         else
         {
-            resultText.text = "Lose";
+            resultText.text = "You dead";
         }
     }
 }
