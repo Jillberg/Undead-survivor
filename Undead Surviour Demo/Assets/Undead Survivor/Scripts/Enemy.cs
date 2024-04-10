@@ -38,9 +38,14 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Bullet")) return;
-        Ehealth -= collision.GetComponent<Bullet>().damage;
-        if(Ehealth>0)
+        if (!(collision.CompareTag("Bullet") || collision.CompareTag("RotateBullet"))) return;
+
+        if (collision.CompareTag("Bullet"))
+            Ehealth -= collision.GetComponent<Bullet>().damage;
+        else
+            Ehealth -= collision.GetComponent<RotateBullet>().damage;
+
+        if (Ehealth>0)
         {
             animator.SetTrigger("Hit");
         }
